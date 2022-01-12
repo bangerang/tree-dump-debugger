@@ -207,8 +207,8 @@ private extension TreeDumpDebugger {
         public init(tree: Tree) {
             self.tree = tree
             cancellable = $searchText.debounce(for: .milliseconds(300), scheduler: RunLoop.main)
-                .sink { searchText in
-                    self.handleSearch(searchText)
+                .sink { [weak self] searchText in
+                    self?.handleSearch(searchText)
                 }
             dump()
         }
