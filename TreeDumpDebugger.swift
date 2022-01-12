@@ -1,6 +1,6 @@
 /**
-*  TreeDumpDebugger
-*  Copyright (c) Johan Thorell 2021
+*  Tree Dump Debugger
+*  Copyright (c) Johan Thorell 2022
 *  MIT license, see LICENSE file for details
 */
 

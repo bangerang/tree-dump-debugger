@@ -1,9 +1,8 @@
-//
-//  ContentView.swift
-//  Example
-//
-//  Created by Johan Thorell on 2022-01-11.
-//
+/**
+*  Tree Dump Debugger
+*  Copyright (c) Johan Thorell 2022
+*  MIT license, see LICENSE file for details
+*/
 
 import SwiftUI
 
