@@ -1,7 +1,13 @@
 # Tree Dump Debugger
 A visual developer tool for inspecting your iOS application data structures.
 
-<img src="Resources/video.gif" alt="drawing" width="200"/>
+<p float="left">
+ <img src="Resources/video.gif" alt="drawing" width="300"/>
+<img src="Resources/example1.png" alt="drawing" width="300"/>
+<img src="Resources/example2.png" alt="drawing" width="300"/>   
+</p>
+
+
 
 ## Features
 Inspect any data structure with only one line of code:
@@ -105,7 +111,7 @@ The repo also contains a LLDB script that can used to present the debugger view 
 (lldb) tdump ["foo", "bar", 122, 3223]
 ```
 
-<img src="Resources/video2.gif" alt="drawing" width="600"/>\
+<img src="Resources/video2.gif" alt="drawing" width="600"/>
 
 To use the script add this line to your `.lldbinit`
 ```
