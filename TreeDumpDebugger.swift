@@ -139,8 +139,8 @@ extension TreeDumpDebugger {
     
     private struct SearchBar: View {
         
-        let searchBarColor = (light: UIColor(red: 229.0/255.0, green: 229.0/255.0, blue: 230.0/255.0, alpha: 1.0),
-                              dark: UIColor(red: 44.0/255.0, green: 44.0/255.0, blue: 46.0/255.0, alpha: 1.0))
+        let searchBarColor = (light: Color(red: 229.0/255.0, green: 229.0/255.0, blue: 230.0/255.0),
+                              dark: Color(red: 44.0/255.0, green: 44.0/255.0, blue: 46.0/255.0))
         
         @Binding var searchText: String
         @Environment(\.colorScheme) var colorScheme
@@ -148,7 +148,7 @@ extension TreeDumpDebugger {
         var body: some View {
             ZStack {
                 Rectangle()
-                    .foregroundColor(colorScheme == .dark ? Color(searchBarColor.dark) : Color(searchBarColor.light))
+                    .foregroundColor(colorScheme == .dark ? searchBarColor.dark : searchBarColor.light)
                 HStack {
                     Image(systemName: "magnifyingglass")
                         .foregroundColor(.gray)
@@ -167,8 +167,8 @@ extension TreeDumpDebugger {
         @ObservedObject fileprivate var model: Model
         @Environment(\.colorScheme) var colorScheme
         
-        let backgroundColor = (light: UIColor(red: 242.0/255.0, green: 242.0/255.0, blue: 247.0/255.0, alpha: 1.0),
-                               dark: UIColor(red: 28.0/255.0, green: 28.0/255.0, blue: 31.0/255.0, alpha: 1.0))
+        let backgroundColor = (light: Color(red: 242.0/255.0, green: 242.0/255.0, blue: 247.0/255.0),
+                               dark: Color(red: 28.0/255.0, green: 28.0/255.0, blue: 31.0/255.0))
         
         var body: some View {
             NavigationView {
@@ -182,7 +182,7 @@ extension TreeDumpDebugger {
                         }
                     }
                 }
-                .background(colorScheme == .light ? Color(backgroundColor.light) : Color(backgroundColor.dark))
+                .background(colorScheme == .light ? backgroundColor.light : backgroundColor.dark)
                 .navigationTitle("Tree dump debugger")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
