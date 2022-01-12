@@ -2,9 +2,9 @@
 A visual developer tool for inspecting your iOS application data structures.
 
 <p float="left">
- <img src="Resources/video.gif" alt="drawing" width="300"/>
-<img src="Resources/example1.png" alt="drawing" width="300"/>
-<img src="Resources/example2.png" alt="drawing" width="300"/>   
+ <img src="Resources/video.gif" alt="drawing" width="250"/>
+<img src="Resources/example1.png" alt="drawing" width="250"/>
+<img src="Resources/example2.png" alt="drawing" width="250"/>   
 </p>
 
 
