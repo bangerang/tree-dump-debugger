@@ -75,8 +75,8 @@ import CustomDump
 struct CustomDump<T>: TreeDumpRepresentable {
     let value: T
     var name: String? = nil
-    let indent: Int = 0
-    let maxDepth: Int = .max
+    var indent: Int = 0
+    var maxDepth: Int = .max
 
     func makeLine(string: String, lineOutput: (String) -> Void) {
         let lines = string.components(separatedBy: .newlines)
